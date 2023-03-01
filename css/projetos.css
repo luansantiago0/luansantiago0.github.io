@@ -1,0 +1,147 @@
+.projetos {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 100px;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projetos .subtitulo {
+  max-width: 3.6ch;
+}
+
+.projetos .subtitulo {
+  color: #e0e0e0;
+}
+
+.projetos-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.projetos-texto strong {
+  color: #141414;
+}
+
+.botao {
+  position: absolute;
+  background: linear-gradient(to right, #4fe7fc, #1cacda);
+  color: #000;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.imagem-one:hover {
+  border-left: 2px solid #4fe7fc;
+  overflow: hidden;
+}
+
+.imagem-two:hover {
+  border-left: 2px solid #4fe7fc;
+  overflow: hidden;
+}
+
+.imagem-three:hover {
+  border-left: 2px solid #4fe7fc;
+  overflow: hidden;
+}
+
+.projetos-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.imagem-one {
+  margin-bottom: 60px;
+}
+
+.textos-one h3,
+p,
+a {
+  margin-bottom: 15px;
+}
+
+.projetos-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.imagem-two {
+  margin-bottom: 60px;
+}
+
+.textos-two h3,
+p,
+a {
+  margin-bottom: 15px;
+}
+
+.projetos-three {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.imagem-three {
+  margin-bottom: 60px;
+}
+
+.textos-three h3,
+p,
+a {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .projetos-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projetos-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .projetos-texto {
+    font-size: 0rem;
+  }
+  .projetos-one {
+    margin-bottom: 80px;
+  }
+  .projetos-two {
+    margin-bottom: 80px;
+  }
+  .projetos-three {
+    margin-bottom: 20px;
+  }
+  .textos-one p {
+    font-size: 0rem;
+  }
+  .textos-two p {
+    font-size: 0rem;
+  }
+  .textos-three p {
+    font-size: 0rem;
+  }
+}
